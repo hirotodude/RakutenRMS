@@ -1,0 +1,451 @@
+
+
+
+
+
+<style type="text/css">
+	<!--
+	/* === #side_area default style =============== */
+
+	#side_area * {
+		margin: 0;
+		padding: 0;
+		color: #333;
+		background: none;
+		font-size: 12px;
+		line-height: 1.4;
+		letter-spacing: 1px;
+		font-family: "ＭＳ Ｐゴシック", "Osaka", "ヒラギノ角ゴ Pro W3", sans-serif;
+	}
+
+	#side_area h1,
+	#side_area h2,
+	#side_area h3,
+	#side_area h4,
+	#side_area h5,
+	#side_area h6,
+	#side_area div,
+	#side_area p,
+	#side_area pre,
+	#side_area ul,
+	#side_area ol,
+	#side_area dl,
+	#side_area dt,
+	#side_area dd,
+	#side_area address,
+	#side_area form,
+	#side_area blockquote {
+		margin: 0;
+		padding: 0;
+		line-height: 1.4;
+		display: block;
+		font-weight: normal;
+	}
+
+	#side_area * img {
+		border: none;
+		vertical-align: text-top;
+	}
+
+	#side_area li {
+		list-style: none;
+		line-height: 0;
+	}
+
+	#side_area p {
+		line-height: 1.4;
+	}
+
+	#side_area address,
+	#side_area caption,
+	#side_area em,
+	#side_area strong,
+	th {
+		font-style: normal;
+		font-weight: normal;
+	}
+
+	#side_area table {
+		border-collapse: collapse;
+		border-spacing: 0;
+		font-size: 12px;
+		line-height: 1.5;
+		empty-cells: show;
+	}
+
+	#side_area th {
+		text-align: left;
+	}
+
+	#side_area object,
+	#side_area embed {
+		vertical-align: top;
+	}
+
+	#side_area a {
+		color: #333;
+		line-height: normal;
+		zoom: 1;
+
+	}
+
+	#side_area a: link {
+		text-decoration: underline;
+	}
+
+	#side_area a: hover {
+		text-decoration: none;
+		color: #333;
+	}
+
+	#side_area .mgn3 {
+		margin-bottom: 3px;
+	}
+
+	#side_area .mgn5 {
+		margin-bottom: 5px;
+	}
+
+	#side_area .mgn10 {
+		margin-bottom: 10px;
+	}
+
+	#side_area .mgn15 {
+		margin-bottom: 15px;
+	}
+
+	#side_area .mgn20 {
+		margin-bottom: 20px;
+	}
+
+	#side_area .mgn30 {
+		margin-bottom: 30px;
+	}
+
+	#side_area .b {
+		font-weight: bold;
+	}
+
+	#side_area .red {
+		color: #ff0000;
+	}
+
+	/* === .clearFix ============================== */
+
+	#side_area .cFix:after {
+		content: " ";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+	}
+
+	#side_area .cFix {
+		display: inline-block;
+		/* MacIE */
+		min-height: 1%;
+		/* IE7 */
+	}
+
+	/* MacIE-not \
+	* html #side_area .cFix {
+		height: 1%;
+	}
+	*/
+	#side_area .cFix {
+		display: block;
+	}
+
+	/* MacIE-not */
+
+	/* === opacity or move ============================== */
+
+	#side_area a:hover img.opcty {
+		filter: alpha(opacity=75);
+		/*IE*/
+		-moz-opacity: 0.75;
+		/*FF*/
+		opacity: 0.75;
+	}
+
+	#side_area a:hover img.imgdown {
+		position: relative;
+		top: 2px;
+		left: 1px;
+	}
+
+	#side_area a:hover img.imgup {
+		position: relative;
+		top: -2px;
+		left: 0px;
+	}
+
+	/* === #side_area layout ============================== */
+
+	#side_area {
+		position: relative;
+		width: 200px;
+		padding-top: 20px;
+	}
+
+	#side_area #store_area {
+		width: 198px;
+		border: #CCC solid 1px;
+		border-top: none;
+		text-align: center;
+	}
+
+	#side_area #store_area img {
+		margin: 10px auto;
+	}
+
+	#side_area #store_area .store_text {
+		padding: 0 10px;
+		text-align: left;
+		margin-bottom: 10px;
+	}
+
+	/* #lt_category1 */
+	#lt_category1 {
+		background: url(https://www.rakuten.ne.jp/gold/jewelrycastle/fc_files/images/left/lt_category1_bg.jpg) repeat-y 0 0;
+		width: 200px;
+	}
+
+	#lt_category1 li {
+		width: 200px;
+		line-height: 0;
+
+	}
+
+	#lt_category1 li img {
+		width: 200px;
+		height: 40px;
+	}
+
+	#lt_category1 li a {
+		background-position: 0 0;
+		background-repeat: no-repeat;
+		display: block;
+		zoom: 1;
+
+	}
+
+	#lt_category1 li a:hover img {
+		visibility: hidden;
+	}
+
+	#lt_category1 li.level1-01 a {
+		background-image: url(https://www.rakuten.ne.jp/gold/jewelrycastle/fc_files/images/left/lt_category1-level1_01_ov.jpg);
+	}
+
+	#lt_category1 li.level1-02 a {
+		background-image: url(https://www.rakuten.ne.jp/gold/jewelrycastle/fc_files/images/left/lt_category1-level1_02_ov.jpg);
+	}
+
+	#lt_category1 li.level2-01 a {
+		background-image: url(https://www.rakuten.ne.jp/gold/jewelrycastle/fc_files/images/left/lt_category1-level2_01_ov.jpg);
+	}
+
+	#lt_category1 li.level2-02 a {
+		background-image: url(https://www.rakuten.ne.jp/gold/jewelrycastle/fc_files/images/left/lt_category1-level2_02_ov.jpg);
+	}
+
+	#lt_category1 li.level2-03 a {
+		background-image: url(https://www.rakuten.ne.jp/gold/jewelrycastle/fc_files/images/left/lt_category1-level2_03_ov.jpg);
+	}
+
+	#lt_category1 li.level2-04 a {
+		background-image: url(https://www.rakuten.ne.jp/gold/jewelrycastle/fc_files/images/left/lt_category1-level2_04_ov.jpg);
+	}
+
+	#lt_category1 li.level2-05 a {
+		background-image: url(https://www.rakuten.ne.jp/gold/jewelrycastle/fc_files/images/left/lt_category1-level2_05_ov.jpg);
+	}
+
+	#lt_category1 li.level2-06 a {
+		background-image: url(https://www.rakuten.ne.jp/gold/jewelrycastle/fc_files/images/left/lt_category1-level2_06_ov.jpg);
+	}
+
+	#lt_category1 li.level2-07 a {
+		background-image: url(https://www.rakuten.ne.jp/gold/jewelrycastle/fc_files/images/left/lt_category1-level2_07_ov.jpg);
+	}
+
+	#lt_category1 li.level2-08 a {
+		background-image: url(https://www.rakuten.ne.jp/gold/jewelrycastle/fc_files/images/left/lt_category1-level2_08_ov.jpg);
+	}
+
+	#lt_category1 li.level2-09 a {
+		background-image: url(https://www.rakuten.ne.jp/gold/jewelrycastle/fc_files/images/left/lt_category1-level2_09_ov.jpg);
+	}
+
+	#lt_category1 li.level2-10 a {
+		background-image: url(https://www.rakuten.ne.jp/gold/jewelrycastle/fc_files/images/left/lt_category1-level2_10_ov.jpg);
+	}
+
+	#lt_category1 li.level2-11 a {
+		background-image: url(https://www.rakuten.ne.jp/gold/jewelrycastle/fc_files/images/left/lt_category1-level2_11_ov.jpg);
+	}
+
+	.lt_category1_ft {
+		margin-top: -1px;
+	}
+	-->
+</style>
+
+
+
+
+
+
+
+
+
+
+<div id="side_area" class="cFix">
+	<!-- ノータッチショップレビュー -->
+
+	<!--レフトナビ-->
+	<style type="text/css">
+		<!--
+		#menu_left {
+			font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+			font-size: 12px;
+			width: 200px;
+			margin: 0 auto;
+		}
+
+		#menu_left .title {
+			background: #000000;
+			color: #FFF;
+			padding: 5px 0;
+			font-size: 13px;
+			text-align: center;
+			margin: 0 0 3px;
+		}
+
+		#menu_left ul {
+			border: 1px solid #CCC;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		#menu_left ul li a {
+			font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+			display: block;
+			color: #444;
+			font-size: 12px;
+			text-decoration: underline;
+			padding: 8px 15px 8px 8px;
+			border-bottom: 1px dotted #ccc;
+			position: relative;
+			line-height: 18px;
+			text-decoration: none;
+		}
+
+		#menu_left ul li.ogaria_parent a {
+			font-size: 14px;
+			font-weight: bold;
+			background: #e6e6fa;
+		}
+
+		#menu_left ul li a:hover {
+			color: gold;
+		}
+
+		-->
+	</style>
+
+	<!--　Category -->
+	<div id="menu_left">
+		<div class="title">Category</div>
+		<ul>
+			<li class="ogaria_parent"><a href="https://item.rakuten.co.jp/stone-mania/c/0000000100/" target="_top">アクセサリー</a></li>
+			<li><a href="https://item.rakuten.co.jp/stone-mania/c/0000000100/">全ての商品</a></li>
+			<li><a href="https://item.rakuten.co.jp/stone-mania/c/0000000122/">ネックレス</a></li>
+			<li><a href="https://item.rakuten.co.jp/stone-mania/c/0000000125/">ブレスレット</a></li>
+			<li><a href="https://item.rakuten.co.jp/stone-mania/c/0000000129/">ピアス</a></li>
+			<li><a href="https://item.rakuten.co.jp/stone-mania/c/0000000127/">イヤリング</a></li>
+			<li><a href="https://item.rakuten.co.jp/stone-mania/c/0000000128/">ペンダントトップ</a></li>
+			<li class="ogaria_parent"><a href="https://item.rakuten.co.jp/stone-mania/c/0000000100/" target="_top">天然石</a></li>
+			<li><a href="https://item.rakuten.co.jp/stone-mania/c/0000000144/">アパタイト</a></li>
+			<li><a href="https://item.rakuten.co.jp/stone-mania/c/0000000145/">ジェード</a></li>
+			<li><a href="https://item.rakuten.co.jp/stone-mania/c/0000000146/">ターコイズ</a></li>
+			<li><a href="https://item.rakuten.co.jp/stone-mania/c/0000000147/">トパーズ</a></li>
+			<li><a href="https://item.rakuten.co.jp/stone-mania/c/0000000148/">ペリドット</a></li>
+			<li><a href="https://item.rakuten.co.jp/stone-mania/c/0000000149/">ラピスラズリ</a></li>
+			<li><a href="https://item.rakuten.co.jp/stone-mania/c/0000000150/">ラリマー</a></li>
+			<li class="ogaria_parent"><a href="https://item.rakuten.co.jp/stone-mania/c/0000000143/" target="_top">バラエティ</a></li>
+			<li><a href="https://item.rakuten.co.jp/stone-mania/c/0000000151/">ちょっとしたお出かけに</a></li>　　　　　
+			<li><a href="https://item.rakuten.co.jp/stone-mania/c/0000000152/">気分に合わせて</a></li>　
+			<li><a href="https://item.rakuten.co.jp/stone-mania/c/0000000153/">シンプル</a></li>
+		</ul>
+	</div>
+
+
+	<br>
+	<!-- 買い物かご -->
+	<div class="mgn10"><a href="https://basket.step.rakuten.co.jp/rms/mall/bs/cartempty/" target="_top"><img src="https://image.rakuten.co.jp/stone-mania/cabinet/shopping-cart.gif" width="200" alt="買い物かご"
+				class="opcty"></a></div>
+	<!-- お支払い送料について -->
+	<div class="mgn10"><a href="https://www.rakuten.co.jp/stone-mania/info2.html" target="_top"><img src="https://image.rakuten.co.jp/stone-mania/cabinet/corporate-912978-.gif" width="200" alt="お支払い送料について"
+		 class="opcty"></a></div>
+		 <br>
+		 <br>
+		 <br>
+	<div id="menu_left">
+		<div class="title">公式アンバサダー</div>
+		<div class="mgn10">
+			<a href="https://item.rakuten.co.jp/stone-mania/10000246/" target="_top">
+				<img src="https://image.rakuten.co.jp/stone-mania/cabinet/imgrc0078585478.jpg" width="200" alt="レディー ブルー＆ピンク アクアマリン ピアス Lady blue&pink earrings P0032" class="opcty">
+			</a>
+			<a href="https://item.rakuten.co.jp/stone-mania/10000195/" target="_top">
+				<img src="https://image.rakuten.co.jp/stone-mania/cabinet/imgrc0078585470.jpg" width="200" alt="ブルースペースラピスラズリブレスレット Blue space Lapis lazuli bracelet B0017" class="opcty">
+			</a>
+			<a href="https://item.rakuten.co.jp/stone-mania/10000256/" target="_top">
+				<img src="https://image.rakuten.co.jp/stone-mania/cabinet/20884.jpg" width="200" alt="ピュアバブル/天然水晶のピアス Pure Bubbles Crystal pierced earrings P0086" class="opcty">
+			</a>
+			<a href="https://item.rakuten.co.jp/stone-mania/10000243/" target="_top">
+				<img src="https://image.rakuten.co.jp/stone-mania/cabinet/205477.jpg" width="200" alt="マーメイド/淡水パールとモンタナブルードロップピアス Mermaid pierced earrings P0084" class="opcty">
+			</a>
+			<a href="https://item.rakuten.co.jp/stone-mania/10000205/" target="_top">
+				<img src="https://image.rakuten.co.jp/stone-mania/cabinet/imgrc0078811126.jpg" width="200" alt="ロンドンブルートパーズ ネックレス London Blue Topaz Necklace（14kgf） N0007" class="opcty">
+			</a>
+			<a href="https://item.rakuten.co.jp/stone-mania/10000225/" target="_top">
+				<img src="https://image.rakuten.co.jp/stone-mania/cabinet/202.jpg" width="200" alt="宝石・天然石ブルートパーズ 水晶 ピアス Lady ice blue earrings P0042" class="opcty">
+			</a>
+
+			<a href="https://item.rakuten.co.jp/stone-mania/10000259/" target="_top">
+				<img src="https://image.rakuten.co.jp/stone-mania/cabinet/imgrc0078811118.jpg" width="200" alt="ラグジュアリー アメジスト フローラル ピアス amethyst floral earrings P0072" class="opcty">
+			</a>
+			<!--
+			<a href="" target="_top">
+				<img src="" width="200" alt="" class="opcty">
+			</a>-->
+		</div>
+
+	</div>
+
+	<!-- ブルースペースラピスラズリブレスレット Blue space Lapis lazuli bracelet B0017
+	<div class="mgn10"><a href="https://item.rakuten.co.jp/stone-mania/10000195/" target="_top"><img src="https://image.rakuten.co.jp/stone-mania/cabinet/imgrc0078585392.gif" width="200" alt="ブルースペースラピスラズリブレスレット Blue space Lapis lazuli bracelet B0017"
+				class="opcty"></a></div>-->
+	<!-- #
+	<div class="mgn10"><a href="l" target="_top"><img src="" alt=""
+				class="opcty"></a></div>
+	<!-- #
+	<div class="mgn10"><a href="l" target="_top"><img src="" alt=""
+				class="opcty"></a></div>
+	<!-- #
+	<div class="mgn10"><a href="l" target="_top"><img src="" alt=""
+				class="opcty"></a></div>
+	<!-- #
+	<div class="mgn10"><a href="l" target="_top"><img src="" alt=""
+				class="opcty"></a></div>
+				<div class="mgn10"><a href="l" target="_top"><img src="" alt=""
+				class="opcty"></a></div>
+	<!-- side_area #end -->
+
+
+	<!-- ▲レフトナビコンテンツ 終了▲ -->
+</div>
+</td>
